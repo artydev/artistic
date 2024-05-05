@@ -62,6 +62,8 @@ with st.form(key='my_form'):
     # Submit button
     submitted = st.form_submit_button(label='Generate')
 
+st.write("Contact : Salvatore")
+
 # Process form submission
 if submitted:
     result = predict(st.session_state.form['prompt'], st.session_state.form['negative_prompt'], st.session_state.form['image_style'], st.session_state.form['use_negative_prompt'], st.session_state.form['seed'], st.session_state.form['width'], st.session_state.form['height'], st.session_state.form['lcm_inference_steps'], st.session_state.form['randomize_seed'])
