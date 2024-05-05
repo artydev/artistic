@@ -29,7 +29,7 @@ def display_image(image_base64):
     # Convert bytes to PIL Image
     image = Image.open(io.BytesIO(image_bytes))
     # Display the image
-    st.image(image, caption='Generated Image', use_column_width=True)
+    st.image(image, caption='Votre oeuvre', use_column_width=True)
 
 # Streamlit app layout
 st.title('From Imagination to Image')
