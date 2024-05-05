@@ -32,7 +32,7 @@ def display_image(image_base64):
     st.image(image, caption='Generated Image', use_column_width=True)
 
 # Streamlit app layout
-st.title('From Imagination to Image')
+st.title('From Imagination to Image...')
 
 if 'form' not in st.session_state:
     st.session_state.form = {
